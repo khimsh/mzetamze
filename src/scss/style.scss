@@ -1,0 +1,21 @@
+@use 'fonts';
+
+@use 'reset';
+
+@use 'vars';
+
+@use 'global';
+
+@use 'header';
+
+@use 'banner';
+
+@use 'about';
+
+@use 'products';
+
+@use 'blog';
+
+@use 'footer';
+
+@use './components/hero';

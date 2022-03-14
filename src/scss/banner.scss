@@ -1,0 +1,24 @@
+.banner {
+  height: 682px;
+  display: grid;
+  place-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--about {
+    background-image: url('../img/about-us-banner.jpg');
+  }
+
+  &--products {
+    background-image: url('../img/products-banner.jpg');
+  }
+
+  &__title {
+    margin-top: 150px;
+    font-family: var(--katerina);
+    font-size: 50px;
+    font-weight: 400;
+    color: hsl(var(--clr-white));
+    text-transform: uppercase;
+  }
+}

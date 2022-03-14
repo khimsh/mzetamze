@@ -1,0 +1,30 @@
+.about-section {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: var(--katerina);
+    font-size: 26px;
+    font-weight: 400;
+    color: hsl(var(--clr-black));
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-bottom: 50px;
+    font-family: var(--firaGo);
+    font-size: 16px;
+    color: hsl(0 0% 49%);
+  }
+
+  &__decor {
+    margin-left: 60px;
+  }
+
+  &__img {
+    flex: 1 0 529px;
+  }
+}

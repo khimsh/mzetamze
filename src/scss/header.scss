@@ -1,0 +1,131 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+
+  align-items: center;
+  background: hsl(var(--clr-black) / 0.8);
+
+  @media (max-width: 1200px) {
+    height: 80px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    img {
+      @media (max-width: 1200px) {
+        height: 60px;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: transparent;
+    color: hsl(var(--clr-white));
+    font-size: 22px;
+
+    display: none;
+
+    @media (max-width: 1200px) {
+      display: block;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+}
+
+.nav {
+  @media (max-width: 1200px) {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background: hsl(var(--clr-black) / 0.8);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+
+    @media (max-width: 1366px) {
+      gap: 50px;
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: var(--mrgvlovaniCaps);
+    font-size: 18px;
+    color: hsl(var(--clr-white));
+    text-transform: uppercase;
+    transition: color 150ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: hsl(var(--clr-accent));
+    }
+
+    &.active {
+      color: hsl(var(--clr-accent));
+    }
+  }
+}
+
+.social-header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  &__item {
+  }
+
+  &__link {
+    color: hsl(var(--clr-white));
+    font-size: 22px;
+    transition: color 150ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: hsl(var(--clr-accent));
+    }
+
+    &.active {
+      color: hsl(var(--clr-accent));
+    }
+  }
+}
