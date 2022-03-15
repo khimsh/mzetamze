@@ -733,11 +733,11 @@ p {
   }
 
   .about > div:first-child img {
-    flex: 1 0 400px;
+    flex: unset;
   }
 
   .about > div:nth-child(2) img {
-    flex: 1 0 400px;
+    flex: unset;
   }
 
   .products-container {
@@ -769,6 +769,10 @@ p {
   .messenger-btn {
     top: unset;
     bottom: 200px;
+  }
+
+  .banner {
+    height: 300px;
   }
 
   .products-container {

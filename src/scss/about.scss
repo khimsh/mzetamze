@@ -91,7 +91,7 @@
         object-fit: cover;
 
         @media (max-width: 1200px) {
-          flex: 1 0 400px;
+          flex: unset;
         }
       }
     }
@@ -103,7 +103,7 @@
         object-fit: cover;
 
         @media (max-width: 1200px) {
-          flex: 1 0 400px;
+          flex: unset;
         }
       }
     }

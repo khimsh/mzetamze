@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+
   &--about {
     background-image: url('../img/about-us-banner.jpg');
   }
