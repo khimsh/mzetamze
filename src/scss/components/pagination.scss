@@ -1,0 +1,42 @@
+.pagination {
+  margin-block: 50px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__link {
+    font-family: var(--firaGo);
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(var(--clr-black));
+    transition: color 150ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &.active {
+      color: hsl(var(--clr-accent));
+    }
+  }
+
+  &__arrow {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-accent));
+    transition: background-color 150ms ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: hsl(var(--clr-black));
+    }
+  }
+}

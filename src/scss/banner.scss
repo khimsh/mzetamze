@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     height: 300px;
   }
 
@@ -17,6 +17,24 @@
     background-image: url('../img/products-banner.jpg');
   }
 
+  &--blog {
+    background-image: url('../img/blog-bg.jpg');
+    height: 370px;
+  }
+
+  &--article {
+    background-image: url('../img/blog-bg.jpg');
+    height: 150px;
+
+    @media (max-width: 1200px) {
+      height: 80px;
+    }
+  }
+
+  &--contact {
+    background-image: url('../img/contact-bg.jpg');
+  }
+
   &__title {
     margin-top: 150px;
     font-family: var(--katerina);
@@ -24,5 +42,9 @@
     font-weight: 400;
     color: hsl(var(--clr-white));
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 }

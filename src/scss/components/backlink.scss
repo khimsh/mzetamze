@@ -1,0 +1,41 @@
+.backlink {
+  margin-block: 30px;
+
+  &__link {
+    padding: 10px 20px;
+    background-color: hsl(var(--clr-accent));
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: hsl(var(--clr-black));
+
+      i {
+        color: hsl(var(--clr-black));
+      }
+    }
+  }
+
+  span {
+    font-family: var(--firaGo);
+    color: hsl(var(--clr-white));
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(var(--clr-white));
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+
+    i {
+      color: hsl(var(--clr-accent));
+      transition: color 150ms ease-in-out;
+    }
+  }
+}

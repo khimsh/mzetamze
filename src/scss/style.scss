@@ -16,6 +16,14 @@
 
 @use 'blog';
 
+@use 'article';
+
+@use 'contact';
+
 @use 'footer';
 
 @use './components/hero';
+
+@use './components/pagination';
+
+@use './components/backlink';
