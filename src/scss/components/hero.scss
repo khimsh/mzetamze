@@ -5,19 +5,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: 768px) {
+    height: 380px;
+  }
+
   &__content {
     height: 100%;
     display: grid;
     place-content: center;
+    padding-inline: 1rem;
   }
 
   &__title {
+    margin-top: 60px;
     margin-bottom: 10px;
     font-family: var(--dmGiorgiKhorguashvili);
     font-size: 55px;
     font-weight: 400;
     color: hsl(var(--clr-white));
     text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   &__subtitle {
@@ -26,5 +39,12 @@
     color: hsl(var(--clr-white));
     text-transform: uppercase;
     text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 }

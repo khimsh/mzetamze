@@ -24,8 +24,15 @@ p {
   align-items: center;
   gap: 15px;
   background-color: #e5003e;
+  border: none;
   border-radius: 5px 0 0 5px;
   color: hsl(var(--clr-white));
+  z-index: 5;
+
+  @media (max-width: 768px) {
+    top: unset;
+    bottom: 200px;
+  }
 
   i {
     font-size: 18px;

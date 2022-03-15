@@ -57,6 +57,7 @@
     transform-origin: top;
     transition: all 200ms ease-in-out;
     opacity: 0;
+    z-index: 10;
 
     &.active {
       opacity: 1;
